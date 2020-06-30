@@ -31,6 +31,18 @@
       align-items: top;
     };
   </style>
+  <script>
+function Frameset(page)
+{
+    framecode = "<frameset rows='1*'>"
+    + "<frame name=main src='" + page + "'>"
+    + "</frameset>";
+
+    document.writｅ(framecode);
+    document.close();
+}
+</script>
+  
 </head>
 
 <body>
@@ -51,21 +63,6 @@
       SetTime--;
 
     }
-
-    window.onload = function TimerStart() {
-      tid = setInterval('msg_time()', 1000)
-    };
-    
-    
-    function Frameset(page)
-{
-    framecode = "<frameset rows='1*'>"
-    + "<frame name=main src='" + page + "'>"
-    + "</frameset>";
-
-    document.writｅ(framecode);
-    document.close();
-}
   </script>
 </body>
 
