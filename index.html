@@ -51,6 +51,11 @@
       document.all.ViewTimer.innerHTML = msg;
 
       SetTime--;
+
+    }
+
+    window.onload = function TimerStart() {
+      tid = setInterval('msg_time()', 1000)
     };
   </script>
 </body>
